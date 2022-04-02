@@ -1,0 +1,2 @@
+## Neofetch to .zshrc
+neofetch
