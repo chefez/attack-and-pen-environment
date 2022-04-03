@@ -17,8 +17,18 @@ Persistence so if you get kicked, you can get back in
 
 # HARDENING LINUX?
 ```
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
+sudo dpkg --configure -a
+sudo apt purge
+sudo apt clean
+sudo apt autoremove
+```
+**EDIT SUDOERS**
+```
+nano /etc/sudoers
+remove the star (*) from www-data or other user at the end and place a note "-HelloThere"
 ```
 
 restart services?
@@ -54,12 +64,17 @@ sudo ufw allow 22
 sudo ufw enable
 ```
 
-### edit  sshd config file
+### edit sshd config file
 ```
 sudo nano /etc/ssh/sshd_config
 *scroll to bottom and type...*
 AllowUsers username@IP
 sudo service ssh restart
+```
+**CHECK USERS RUNNING AND KILL THEIR TASK**
+```
+ps -aef --forest
+kill PID
 ```
 
 # HARDENING WINDOWS?
@@ -86,6 +101,12 @@ qwinsta
 ```
 netstat -anob
 taskkill /f /pid pid_number
+```
+
+**KILL PYTHON PTY**
+```
+find / | grep pty.py
+rm /usr/lib/python2.7\pty.py
 ```
 
 **BREAK OPPONENTS TERMINAL?**
