@@ -1,9 +1,4 @@
-# ATTACKING WINDOWS?  
-  
-  
-  
-# ATTACKING LINUX?  
- 
+# ATTACKING WINDOWS?   
 
   
 # DEFENDING?
