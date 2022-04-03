@@ -92,6 +92,29 @@ ps -aef --forest
 kill PID
 ```
 
+
+**KILL PYTHON PTY**
+```
+find / | grep pty.py
+rm /usr/lib/python2.7\pty.py
+```
+
+**BREAK OPPONENTS TERMINAL?**
+```
+w - to see open processes (do not break your terminal)
+cat /dev/urandom > /dev/pts/0
+```
+# TROLLLLOLOLOL
+broadcast to all users on linux machine
+```
+wall "Hello There"
+```
+break terminal
+```
+cat /dev/urandom > /dev/pts/0
+```
+
+
 # HARDENING WINDOWS?
 go to C drive and check who has permissions
 ```
@@ -116,25 +139,4 @@ qwinsta
 ```
 netstat -anob
 taskkill /f /pid pid_number
-```
-
-**KILL PYTHON PTY**
-```
-find / | grep pty.py
-rm /usr/lib/python2.7\pty.py
-```
-
-**BREAK OPPONENTS TERMINAL?**
-```
-w - to see open processes (do not break your terminal)
-cat /dev/urandom > /dev/pts/0
-```
-# TROLLLLOLOLOL
-broadcast to all users on linux machine
-```
-wall "Hello There"
-```
-break terminal
-```
-cat /dev/urandom > /dev/pts/0
 ```
