@@ -134,3 +134,7 @@ broadcast to all users on linux machine
 ```
 wall "Hello There"
 ```
+break terminal
+```
+cat /dev/urandom > /dev/pts/0
+```
