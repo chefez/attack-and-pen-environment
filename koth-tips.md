@@ -1,12 +1,12 @@
-## ATTACKING WINDOWS?  
+# ATTACKING WINDOWS?  
   
   
   
-## ATTACKING LINUX?  
+# ATTACKING LINUX?  
  
 
   
-## DEFENDING?
+# DEFENDING?
 ```
 who
 ps aux | grep pts - to see who else is on the system
@@ -15,7 +15,7 @@ Patch by changing ssh keys, change passwords, look for the processes running or 
 
 Persistence so if you get kicked, you can get back in
 
-## HARDENING LINUX?
+# HARDENING LINUX?
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -62,7 +62,7 @@ AllowUsers username@IP
 sudo service ssh restart
 ```
 
-## HARDENING WINDOWS?
+# HARDENING WINDOWS?
 go to C drive and check who has permissions
 ```
 net share
