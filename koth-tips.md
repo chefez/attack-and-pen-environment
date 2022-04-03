@@ -42,6 +42,12 @@ sudo ufw enable
 sudo ufw status
 sudo ofw logging on
 ```
+**Inspecting Crontabs**
+```
+cd /var/spool/crontabs
+find .
+root crontab? inspect
+```
 
 adding user?
 ```
@@ -71,6 +77,15 @@ sudo nano /etc/ssh/sshd_config
 AllowUsers username@IP
 sudo service ssh restart
 ```
+**Gen SSH Backdoor**
+```
+ssh-keygen
+mv id_rsa.pub authorized_keys
+place key on target machine
+chmod 600 id_rsa
+ssh -i id_rsa user@IP
+```
+
 **CHECK USERS RUNNING AND KILL THEIR TASK**
 ```
 ps -aef --forest
@@ -113,4 +128,9 @@ rm /usr/lib/python2.7\pty.py
 ```
 w - to see open processes (do not break your terminal)
 cat /dev/urandom > /dev/pts/0
+```
+# TROLLLLOLOLOL
+broadcast to all users on linux machine
+```
+wall "Hello There"
 ```
