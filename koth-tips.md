@@ -1,6 +1,6 @@
 # ATTACKING WINDOWS?   
 
-**PERSISTENCE**
+**PERSISTENCE:**
 [OffSec Meterpreter Persistence](https://www.offensive-security.com/metasploit-unleashed/meterpreter-service/)
 
 # DEFENDING?
