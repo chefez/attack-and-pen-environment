@@ -132,6 +132,15 @@ qwinsta
 
 **KILL TASK?**
 ```
-netstat -anob
+schtasks 
+nestat –anob | findstr ESTABLISHED 
 taskkill /f /pid pid_number
+``` 
+
+**MANAGING USERS/ADMIN**
 ```
+net  users
+net localgroup administrators
+net user /delete USER
+```
+**Password Policies**
