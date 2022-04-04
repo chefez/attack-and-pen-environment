@@ -1,6 +1,8 @@
 # ATTACKING WINDOWS?   
 
-  
+**PERSISTENCE**
+[OffSec Meterpreter Persistence](https://www.offensive-security.com/metasploit-unleashed/meterpreter-service/)
+
 # DEFENDING?
 ```
 who
@@ -144,3 +146,5 @@ net localgroup administrators
 net user /delete USER
 ```
 **Password Policies**
+ 
+ 
