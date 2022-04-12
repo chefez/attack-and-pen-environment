@@ -145,6 +145,38 @@ net  users
 net localgroup administrators
 net user /delete USER
 ```
-**Password Policies**
- 
+
+## HARDENING WINDOWS?
+tasklist.exe > tasklist.txt
+query user
+Get-Eventlog –LogName Security –Newest 25
+netstat -ano > output.txt (look for established)
+Remove-Item FILE
+
+**MANAGE USERS**
+```
+net localgroup
+net user /delete 
+```
+**CHANGING TIME**
+```
+w32tm /query /status
+w32tm /config /syncfromflags:manual /manualpeerlist:time.google.com
+net stop w32time
+net start w32time
+w32tm /config /update
+time.nist.gov
+```
+**SHARES**
+```
+net share (stop sharing on all shares to disallow smbclient)
+```
+**password policy check**
+local security policy
+
+**FIREWALL**
+```
+netsh advfirewall firewall show rule name=all 
+```
+
  
