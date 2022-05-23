@@ -5,3 +5,6 @@ https://www.dell.com/support/kbdoc/en-us/000121955/installing-active-directory-d
 ## ADD COMPUTER TO DOMAIN VIA POWERSHELL
 Add-Computer -DomainName DomainName -Restart
 
+## event viewer script
+https://eventlogxp.com/blog/exporting-event-logs-with-windows-powershell/
+
