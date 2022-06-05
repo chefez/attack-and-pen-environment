@@ -14,6 +14,7 @@ https://stackoverflow.com/questions/4037939/powershell-says-execution-of-scripts
 ## XP UPDATE
 https://www.catalog.update.microsoft.com/Search.aspx?q=SP3+XP
 
+## INSTALL AD
 ```
 Install-WindowsFeature -name AD-Domain-Services -IncludeManagementTools 
 
